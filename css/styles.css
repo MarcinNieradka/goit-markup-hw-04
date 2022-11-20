@@ -20,6 +20,16 @@ body {
   color: var(--font-main-color);
 }
 
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
 /* =====================================  Background colors ======================================= */
 .showcase {
   background-color: var(--bg-dark-color);
@@ -69,10 +79,16 @@ body {
   color: var(--font-hover-link-color);
 }
 
+.team-social-icon:hover,
+.client-description:hover,
+.footer-social-icon:hover {
+  cursor: pointer;
+}
+
 /* ===================================== Font colors, sizes and weight =========================== */
 
 .logo-placeholder {
-  display: inline-block;
+  /* display: inline-block; */
   color: var(--color-black);
   font-family: "Raleway";
   font-style: normal;
@@ -172,6 +188,7 @@ body {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-top: 30px;
 }
 
 .about-article {
@@ -187,6 +204,7 @@ body {
   line-height: 1.19;
   /* text-align: center; */
   letter-spacing: 0.03em;
+  padding-top: 30px;
 }
 
 .teammate-description {
@@ -197,12 +215,31 @@ body {
   letter-spacing: 0.03em;
 }
 
+.teammate-socials {
+  margin: 0 32px;
+  list-style: none;
+  display: flex;
+  /* background-color: #2196f3; */
+  justify-content: space-between;
+}
+
 .adres {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .where-to {
   color: var(--color-white);
+}
+
+.footer-social-h3 {
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 20px;
 }
 
 /* ===================================== Font colors, sizes and weight - PORTFOLIO =========================== */
@@ -282,7 +319,12 @@ body {
 }
 
 .about-list > li {
-  flex: 1; /* columns stay the same size no matter how much txt has one */
+  flex: 1; /* columns stay the same width no matter how much txt has one */
+}
+
+.about-icon {
+  text-align: center;
+  background-color: var(--bg-medium-color);
 }
 
 .what-we-do {
@@ -299,14 +341,24 @@ body {
   justify-content: space-between;
 }
 
-.team-list {
+.team-list,
+.client-list {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0; /* ------------ !!!!!!!!! deletes empty space between main and footer*/
   justify-content: space-between;
   text-align: center;
+  /* background-color: yellow*/ /*  --------- only to temporary preview box area*/
 }
+
+.team-list > li {
+  background-color: var(--color-white);
+  padding-bottom: 18px;
+}
+/* .teammate-socials > li {
+  
+} */
 
 .adres-list {
   display: flex;
@@ -355,4 +407,16 @@ body {
 .portfolio-item {
   border-bottom: 1px solid #eeeeee;
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.footer-container {
+  display: flex;
+  gap: 70px;
+}
+
+.footer-social-list {
+  color: white; /* --------------------- only to preview*/
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
 }
