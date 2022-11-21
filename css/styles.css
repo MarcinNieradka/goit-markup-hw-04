@@ -11,6 +11,7 @@
   --bg-medium-color: #f5f4fa;
   --font-transparent: rgb(255 255 255 / 0.6);
   --nav-border-color: #ececec;
+  --showcase-bg: rgba(47, 48, 58, 0.4);
 }
 /* * {
   margin: 0;
@@ -36,6 +37,7 @@ h5 {
   text-align: center;
   /* height: 600px; */
   padding: 200px 0px;
+  background-image: linear-gradient(to bottom, var(--showcase-bg), var(--showcase-bg)), url(../images/showcase.png);
 }
 
 .team {
