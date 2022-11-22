@@ -34,7 +34,7 @@ h5 {
 
 /* =====================================  Background colors ======================================= */
 .showcase {
-  background-color: var(--bg-dark-color);
+  /* background-color: var(--bg-dark-color); */
   text-align: center;
   /* height: 600px; */
   padding: 200px 0px;
