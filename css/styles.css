@@ -91,15 +91,25 @@ h5 {
 }
 
 .team-social-icon:hover,
-.client-description:hover,
+.client-icon:hover,
 .footer-social-icon:hover,
 .team-social-icon:focus,
-.client-description:focus,
+.client-icon:focus,
 .footer-social-icon:focus {
   cursor: pointer;
+  background-color: var(--hover-bg-color);
+  transition: 0.3s;
+  color: black;
 }
 
 /* ============================================== ICONS =========================== */
+
+.icon-nav {
+  /* display: inline-block; */
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
 
 .team-social-icon {
   width: 44px;
@@ -110,6 +120,11 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: currentColor;
+}
+
+svg:hover {
+  fill: orange;
 }
 
 .client-list {
@@ -122,7 +137,7 @@ h5 {
   /* background-color: yellow*/ /*  --------- only to temporary preview box area*/
 }
 
-.client-description {
+.client-icon {
   background-color: burlywood;
   min-width: 170px;
   height: 92px;
@@ -154,7 +169,7 @@ h5 {
   letter-spacing: 0.03em;
   margin-right: 93px;
   /* background-color: #212121; */ /*  -------- only to temporary preview box area*/
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .logo-down {
@@ -166,13 +181,13 @@ h5 {
 }
 
 .navigation {
-  display: inline-block;
+  /* display: inline-block; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   /* background-color: yellow; */ /*  ------ only to temporary preview box area*/
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .nav-link {
@@ -186,25 +201,26 @@ h5 {
 }
 
 .mail-link {
-  display: inline-block;
+  /* display: inline-block; */
   /* background-color: yellow; */ /*  ------ only to temporary preview box area*/
-  margin-left: 371px;
+  /* margin-left: 371px; */
+  margin-left: auto;
+  margin-right: 20px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .tel-link {
-  display: inline-block;
+  /* display: inline-block; */
   /* background-color: yellow; */ /*  ------ only to temporary preview box area*/
-  margin-left: 20px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .showcase-h1 {
@@ -330,6 +346,14 @@ h5 {
 .wrapper {
   width: 1600px;
   margin: auto;
+}
+
+.nav-container {
+  /* background-color: burlywood; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* margin: 0; */
 }
 
 .container {
